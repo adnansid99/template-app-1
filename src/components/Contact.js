@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="max-w-[1250px] mx-auto py-24 px-4">
+    <section className="container py-24">
       <div className="flex flex-col justify-center items-start gap-4 mb-8">
         <p className="text-sm">
           Our showroom is open from Monday to Saturday, 9:00 AM to 6:00 PM.

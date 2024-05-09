@@ -1,6 +1,6 @@
 export default function Gallery() {
   return (
-    <section className="py-24 px-4 flex flex-col items-center justify-center text-center gap-6 max-w-[1250px] mx-auto">
+    <section className="py-24 flex flex-col items-center justify-center text-center gap-6 container">
       <div>
         <h2 className="text-4xl font-semibold mb-4">
           Explore Our Bike Gallery

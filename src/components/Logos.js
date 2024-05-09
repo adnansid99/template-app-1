@@ -1,6 +1,6 @@
 export default function Logos() {
   return (
-    <section className="py-24 px-4 flex flex-col items-center justify-center gap-8 max-w-[1250px] mx-auto">
+    <section className="py-24 flex flex-col items-center justify-center gap-8 container">
       <h2 className="text-4xl font-semibold text-center">
         Trusted by the worlds best companies social proof to build credibility
       </h2>

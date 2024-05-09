@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="max-w-[1250px] mx-auto py-24 px-4">
+    <footer className="py-24 container">
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-4 justify-center items-start">
           <p className="text-sm">Explore our collection of premium bikes.</p>

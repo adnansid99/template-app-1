@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="gap-6 max-w-[1250px] mx-auto flex flex-col items-center justify-center py-24 px-4">
+    <section className="gap-6 container flex flex-col items-center justify-center py-24">
       <h2 className="text-4xl font-semibold">Find Your Perfect Ride</h2>
       <p>
         Explore our wide range of bikes and find the one that suits your style

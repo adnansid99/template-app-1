@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between py-6 px-4 max-w-[1250px] mx-auto">
+    <nav className="flex items-center justify-between py-6 container">
       <div className="flex items-center justify-start gap-6  font-medium text-sm">
         <img src="/jutsu-avatar.png" alt="Jutsu" className="h-12" />
         <p>Home</p>

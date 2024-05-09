@@ -1,6 +1,6 @@
 export default function FAQ() {
   return (
-    <section className="max-w-[1250px] mx-auto flex flex-col gap-8 items-center justify-center py-24 px-4">
+    <section className="container flex flex-col gap-8 items-center justify-center py-24">
       <h2 className="text-4xl font-semibold">FAQ</h2>
       <p className="text-base">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse

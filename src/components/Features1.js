@@ -1,12 +1,12 @@
 export default function Features1() {
   return (
-    <section className="max-w-[1250px] mx-auto py-24 px-4 flex items-center  justify-around ">
+    <section className="container py-24 grid grid-cols-2 items-center justify-between">
       <img
-        src="https://source.unsplash.com/random/600x450/?sports bikes"
+        src="https://source.unsplash.com/random/500x300/?sports bikes"
         alt="features"
-        className="aspect-video max-w-[500px] rounded-lg"
+        className="rounded-lg object-cover object-center"
       />
-      <div className="max-w-[500px] flex flex-col gap-8">
+      <div className="flex flex-col gap-8">
         <p className="text-base">Ride in Style and Comfort</p>
         <h2 className="text-4xl font-semibold">Premium Bikes</h2>
         <p className="text-base">

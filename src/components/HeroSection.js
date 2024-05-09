@@ -6,7 +6,7 @@ export default function HeroSection() {
         alt="hero"
         className="w-full max-h-[70dvh] object-cover object-center rounded-md"
       />
-      <div className="flex items-center justify-between px-4 py-24 max-w-[1250px] mx-auto">
+      <div className="flex items-center justify-between container py-24 ">
         <h1 className="text-6xl font-bold max-w-[50%]">
           Welcome to our Bike Showroom
         </h1>
