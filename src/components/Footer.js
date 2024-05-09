@@ -20,6 +20,13 @@ export default function Footer() {
         </div>
         <div>
           <img src="/Jutsu Black.png" alt="" className="max-w-44" />
+          <div className="flex items-center gap-4 mt-2">
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+            <i class="fa-brands fa-square-facebook text-2xl"></i>
+            <i class="fa-brands fa-github text-2xl"></i>
+            <i class="fa-brands fa-x-twitter text-2xl"></i>
+            <i class="fa-brands fa-youtube text-2xl"></i>
+          </div>
         </div>
       </div>
       <div className="flex flex-col text-center text-sm gap-4 mt-10">
