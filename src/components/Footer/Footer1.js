@@ -1,24 +1,35 @@
-export default function Footer() {
+export default function Footer1(props) {
+  const {
+    title1 = "Explore our collection of premium bikes.",
+    title2 = "Visit us at our showroom or contact us for more information",
+    inputPlaceholder = "Enter your email",
+    buttonText = "Contact Us",
+    legal = [
+      { name: "Privacy Policy", link: "#" },
+      { name: "Terms and conditions", link: "#" },
+      { name: "Cookies Policy", link: "#" },
+    ],
+    copyRight = "2023 Bike Showroom. All Rights Reserved.",
+  } = props;
+
   return (
     <footer className="py-24 container">
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-4 justify-center items-start">
-          <p className="text-sm">Explore our collection of premium bikes.</p>
+          <p className="text-sm">{title1}</p>
           <div className="flex items-center justify-end gap-4">
             <input
-              placeholder="Enter your email"
+              placeholder={inputPlaceholder}
               className="border-[1px] border-gray-400 px-12 rounded-2xl text-sm font-medium py-1 text-center outline-none"
             />
 
             <button className="border-[1px] border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
-              Contact Us
+              {buttonText}
             </button>
           </div>
-          <p className="text-sm">
-            Visit us at our showroom or contact us for more information
-          </p>
+          <p className="text-sm">{title2}</p>
         </div>
-        <div>
+        <div className="opacity-80">
           <img src="/Jutsu Black.png" alt="" className="max-w-44" />
           <div className="flex items-center gap-4 mt-2">
             <i class="fa-brands fa-linkedin text-2xl"></i>
@@ -31,11 +42,13 @@ export default function Footer() {
       </div>
       <div className="flex flex-col text-center text-sm gap-4 mt-10">
         <div className="flex items-center justify-center gap-8 ">
-          <p>Privacy Policy</p>
-          <p>Terms and conditions</p>
-          <p>Cookies Policy</p>
+          {legal.map((item, index) => (
+            <a key={index} href={item.link}>
+              {item.name}
+            </a>
+          ))}
         </div>
-        <p>&copy;2023 Bike Showroom. All Rights Reserved.</p>
+        <p>&copy;{copyRight}</p>
       </div>
     </footer>
   );
