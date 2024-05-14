@@ -38,16 +38,16 @@ export default function Navbar1(props) {
         onClick={() => setShowNav(true)}
       />
       <div className="hidden md:flex items-center justify-end gap-4">
-        <button className="border-[1px] border-orange-700 text-white rounded-2xl bg-orange-700 px-4 text-sm font-medium py-1">
+        <button className="border border-orange-700 text-white rounded-2xl bg-orange-700 px-4 text-sm font-medium py-1">
           {button1}
         </button>
-        <button className="border-[1px] border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
+        <button className="border border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
           {button2}
         </button>
       </div>
       <div
-        className={`absolute transition-all duration-200 top-0 p-7 px-8 w-full bg-white border-b ${
-          showNav ? "right-0" : "right-[-100%]"
+        className={`absolute transition-all duration-200 top-0 right-0 p-7 px-8 w-full bg-white border-b ${
+          showNav ? "inline-block" : "hidden"
         }`}
       >
         <i
