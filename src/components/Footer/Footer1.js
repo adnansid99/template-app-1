@@ -13,17 +13,17 @@ export default function Footer1(props) {
   } = props;
 
   return (
-    <footer className="py-24 container">
-      <div className="flex items-center justify-between">
-        <div className="flex flex-col gap-4 justify-center items-start">
+    <footer className="py-20 container">
+      <div className="flex items-center flex-col md:flex-row gap-6 md:gap-0 justify-between">
+        <div className="flex flex-col gap-4 justify-center items-center text-center md:text-left md:items-start">
           <p className="text-sm">{title1}</p>
-          <div className="flex items-center justify-end gap-4">
+          <div className="flex md:flex-row flex-col items-center justify-end gap-4">
             <input
               placeholder={inputPlaceholder}
-              className="border-[1px] border-gray-400 px-12 rounded-2xl text-sm font-medium py-1 text-center outline-none"
+              className="border border-gray-400 w-full px-12 rounded-2xl text-sm font-medium py-1 text-center outline-none"
             />
 
-            <button className="border-[1px] border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
+            <button className="border w-full border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
               {buttonText}
             </button>
           </div>
@@ -41,7 +41,7 @@ export default function Footer1(props) {
         </div>
       </div>
       <div className="flex flex-col text-center text-sm gap-4 mt-10">
-        <div className="flex items-center justify-center gap-8 ">
+        <div className="flex items-center md:flex-row flex-col justify-center gap-8 ">
           {legal.map((item, index) => (
             <a key={index} href={item.link}>
               {item.name}

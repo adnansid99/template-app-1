@@ -9,20 +9,20 @@ export default function Features1(props) {
 
   return (
     <section
-      className={`container py-24 flex gap-28 items-center justify-between ${
-        isReverse ? "flex-row-reverse" : "flex-row"
+      className={`container py-20 flex flex-col gap-10 md:gap-20 items-center justify-between ${
+        isReverse ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
       <img
         src={imageSrc}
         alt="features"
-        className="rounded-lg object-cover object-center"
+        className="rounded-lg object-cover aspect-video object-center"
         loading="lazy"
       />
-      <div className="flex flex-col gap-8">
-        <p className="text-base">{label}</p>
-        <h2 className="text-4xl font-semibold">{title}</h2>
-        <p className="text-base">{description}</p>
+      <div className="flex flex-col gap-4 md:gap-8">
+        <p className="text-sm md:text-base">{label}</p>
+        <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
+        <p className="text-sm md:text-base">{description}</p>
       </div>
     </section>
   );

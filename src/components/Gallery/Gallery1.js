@@ -10,12 +10,12 @@ export default function Gallery1(props) {
   } = props;
 
   return (
-    <section className="py-24 flex flex-col items-center justify-center text-center gap-6 container">
+    <section className="py-20 flex flex-col items-center justify-center text-center gap-6 container">
       <div>
         <h2 className="text-4xl font-semibold mb-4">{title}</h2>
         <p className="text-base">{subTitle}</p>
       </div>
-      <div className="grid grid-cols-3 items-center gap-10 w-full">
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] items-center gap-10 w-full">
         {galleryImages.map((image, index) => (
           <img
             key={index}

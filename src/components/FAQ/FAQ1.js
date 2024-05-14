@@ -34,21 +34,25 @@ export default function FAQ1(props) {
   } = props;
 
   return (
-    <section className="container flex flex-col gap-8 items-center justify-center py-24">
-      <h2 className="text-4xl font-semibold">{title}</h2>
-      <p className="text-base">{subTitle}</p>
+    <section className="container flex flex-col gap-8 items-center justify-center py-20">
+      <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
+      <p className="text-sm md:text-base text-center">{subTitle}</p>
       <div className="flex flex-col justify-center items-start gap-6 my-8">
         {faq.map((item, index) => (
           <div key={index}>
-            <h3 className="text-base font-medium">{item.question}</h3>
-            <p className="text-sm font-normal">{item.answer}</p>
+            <h3 className="text-sm leading-relaxed md:text-base font-semibold ">
+              {item.question}
+            </h3>
+            <p className="text-xs md:text-sm leading-relaxed font-medium md:font-normal">
+              {item.answer}
+            </p>
           </div>
         ))}
       </div>
       <div className="flex flex-col items-center justify-center text-center gap-4">
-        <h2 className="text-4xl font-semibold">{title2}</h2>
-        <p className="text-base">{subTitle2}</p>
-        <button className="border-[1px] border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
+        <h2 className="text-2xl md:text-4xl font-semibold">{title2}</h2>
+        <p className="text-sm md:text-base">{subTitle2}</p>
+        <button className="border border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
           {button}
         </button>
       </div>

@@ -1,4 +1,4 @@
-export default function Logos1(props) {
+export default function Logos2(props) {
   const {
     title = "Trusted by the worlds best companies social proof to build credibility",
     logos = [
@@ -12,17 +12,17 @@ export default function Logos1(props) {
   } = props;
 
   return (
-    <section className="py-20 flex flex-col items-center justify-center gap-8 container">
-      <h2 className="text-2xl md:text-4xl font-semibold text-center">
+    <section className="py-20 flex flex-col items-center justify-center gap-12 container">
+      <h2 className="text-4xl font-semibold text-center max-w-3xl leading-relaxed">
         {title}
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,_minmax(150px,1fr))] items-center w-full gap-10">
+      <div className="grid grid-cols-3 items-center gap-20">
         {logos.map((logo, index) => (
           <img
             key={index}
             src={logo}
             alt="logos"
-            className="w-full rounded-md aspect-square"
+            className="w-40  rounded-md aspect-square"
           />
         ))}
       </div>
