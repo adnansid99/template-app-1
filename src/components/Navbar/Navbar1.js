@@ -46,8 +46,8 @@ export default function Navbar1(props) {
         </button>
       </div>
       <div
-        className={`absolute transition-all right-0 top-0 p-7 px-8 w-screen bg-white border-b ${
-          showNav ? "block" : "hidden"
+        className={`absolute transition-all duration-200 top-0 p-7 px-8 w-full bg-white border-b ${
+          showNav ? "right-0" : "right-[-100%]"
         }`}
       >
         <i
