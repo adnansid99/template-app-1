@@ -31,7 +31,7 @@ export default function FAQ2(props) {
   } = props;
 
   return (
-    <section className="container py-20 flex flex-col items-center">
+    <section className="container mx-auto px-8 py-20 flex flex-col items-center">
       <div className="grid gap-10 w-full grid-cols-1 lg:grid-cols-2">
         <div className="flex text-center lg:text-left flex-col gap-6">
           <h2 className="text-3xl md:text-4xl font-bold">{title}</h2>

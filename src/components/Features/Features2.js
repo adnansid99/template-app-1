@@ -8,7 +8,7 @@ export default function Features2(props) {
   } = props;
 
   return (
-    <section className="container py-20 flex items-center justify-center">
+    <section className="container mx-auto px-8 py-20 flex items-center justify-center">
       {/* <h2 className="text-3xl md:text-5xl font-bold">What we provide?</h2> */}
       <div
         className={`flex flex-col-reverse justify-between overflow-hidden items-center gap-8 lg:w-full bg-slate-200 bg-opacity-70 rounded-3xl ${

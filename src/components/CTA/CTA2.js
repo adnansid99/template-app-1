@@ -7,7 +7,7 @@ export default function CTA2(props) {
   } = props;
 
   return (
-    <section className="container py-20">
+    <section className="container mx-auto px-8 py-20">
       <div className="gap-6 bg-slate-100 max-w-10/12 rounded-3xl border mx-auto flex flex-col items-center text-center justify-center p-10 md:p-20">
         <h2 className="text-3xl md:text-5xl font-semibold">{title}</h2>
         <p className="text-sm md:text-base">{subTitle}</p>

@@ -29,7 +29,7 @@ export default function Contact2(props) {
 
   return (
     <section className="py-20 bg-teal-600">
-      <div className="container text-white">
+      <div className="container mx-auto px-8 text-white">
         <div className="flex items-center justify-between">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl mb-12 md:text-5xl font-semibold">

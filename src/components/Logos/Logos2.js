@@ -12,7 +12,7 @@ export default function Logos1(props) {
   } = props;
 
   return (
-    <section className="py-20 pb-28 flex flex-col items-center justify-center gap-20 container">
+    <section className="py-20 pb-28 mx-auto px-8 flex flex-col items-center justify-center gap-20 container">
       <h2 className="text-3xl md:text-4xl max-w-3xl font-bold text-center">
         {title}
       </h2>

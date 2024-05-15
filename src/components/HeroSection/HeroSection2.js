@@ -8,7 +8,7 @@ export default function HeroSection2(props) {
   } = props;
 
   return (
-    <header className="container min-h-screen flex flex-col py-20 sm:py-24 gap-20 items-center justify-center">
+    <header className="container mx-auto px-8 min-h-screen flex flex-col py-20 sm:py-24 gap-20 items-center justify-center">
       <div className="flex  flex-col items-center justify-center w-full text-center  gap-8">
         <h1 className="text-4xl md:text-7xl font-extrabold">{title}</h1>
         <div className="flex flex-col items-center justify-center gap-6">

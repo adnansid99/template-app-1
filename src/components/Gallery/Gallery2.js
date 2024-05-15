@@ -11,7 +11,7 @@ export default function Gallery2(props) {
   } = props;
 
   return (
-    <section className="py-20 flex lg:flex-row flex-col items-center justify-center text-center gap-20 container">
+    <section className="mx-auto px-8 py-20 flex lg:flex-row flex-col items-center justify-center text-center gap-20 container">
       <div className="w-full lg:w-1/2">
         <h2 className="text-3xl md:text-5xl font-bold mb-6">{title}</h2>
         <p className="text-sm md:text-lg">{subTitle}</p>
