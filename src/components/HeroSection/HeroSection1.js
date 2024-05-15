@@ -8,27 +8,27 @@ export default function HeroSection1(props) {
   } = props;
 
   return (
-    <header>
+    <section>
       <img
         src={backgroundImg}
         alt="hero"
-        className="w-full max-h-[50dvh] object-cover object-center rounded-md"
+        className="max-h-[50dvh] w-full object-cover object-center"
         loading="lazy"
       />
-      <div className="flex md:flex-row flex-col items-center justify-center w-full text-center md:text-left container py-20 md:gap-0 gap-8">
-        <h1 className="text-4xl md:text-6xl font-bold">{title}</h1>
-        <div className="flex flex-col items-center md:items-start justify-center gap-6">
-          <h6 className="text-xl">{subTitle}</h6>
+      <div className="container mx-auto flex w-full flex-col items-center justify-between gap-14 px-8 py-20 text-center lg:flex-row lg:text-left">
+        <h1 className="text-3xl font-bold md:text-5xl lg:w-1/2">{title}</h1>
+        <div className="flex flex-col items-center justify-center gap-6 lg:w-1/2 lg:items-start">
+          <h6 className="text-base lg:text-xl">{subTitle}</h6>
           <div className="flex items-center justify-end gap-4">
-            <button className="border border-orange-700 text-white rounded-2xl bg-orange-700 px-4 text-sm font-medium py-1">
+            <button className="text-nowrap rounded-2xl border border-orange-700 bg-orange-700 px-4 py-1 text-sm font-medium text-white">
               {button1}
             </button>
-            <button className="border border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
+            <button className="text-nowrap rounded-2xl border border-orange-700 bg-white px-4 py-1 text-sm font-medium text-orange-700">
               {button2}
             </button>
           </div>
         </div>
       </div>
-    </header>
+    </section>
   );
 }

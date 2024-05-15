@@ -28,7 +28,7 @@ export default function Contact1(props) {
   } = props;
 
   return (
-    <section className="container py-20">
+    <section className="container px-8 mx-auto py-20">
       <div className="flex flex-col justify-center items-start gap-4 mb-8">
         <p className="text-sm">{opentime}</p>
         <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>

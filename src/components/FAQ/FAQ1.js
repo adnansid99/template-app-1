@@ -34,7 +34,7 @@ export default function FAQ1(props) {
   } = props;
 
   return (
-    <section className="container flex flex-col gap-8 items-center justify-center py-20">
+    <section className="container px-8 mx-auto flex flex-col gap-8 items-center justify-center py-20">
       <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
       <p className="text-sm md:text-base text-center">{subTitle}</p>
       <div className="flex flex-col justify-center items-start gap-6 my-8">
@@ -52,7 +52,7 @@ export default function FAQ1(props) {
       <div className="flex flex-col items-center justify-center text-center gap-4">
         <h2 className="text-2xl md:text-4xl font-semibold">{title2}</h2>
         <p className="text-sm md:text-base">{subTitle2}</p>
-        <button className="border border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
+        <button className="border bg-white border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
           {button}
         </button>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Navbar1(props) {
   const {
@@ -15,9 +15,13 @@ export default function Navbar1(props) {
 
   const [showNav, setShowNav] = useState(false);
   return (
-    <nav className="flex items-center justify-between py-4 container">
+    <nav className="flex items-center justify-between py-4 px-8 mx-auto container">
       <div className="flex items-center justify-start gap-6 font-medium text-sm">
-        <img src="/jutsu-avatar.png" alt="Jutsu" className="h-12" />
+        <img
+          src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/jutsu-avatar.png"
+          alt="Jutsu"
+          className="h-12"
+        />
 
         <ul className="hidden md:flex gap-6 items-center">
           {navItems.map((item, index) => (
@@ -41,7 +45,7 @@ export default function Navbar1(props) {
         <button className="border border-orange-700 text-white rounded-2xl bg-orange-700 px-4 text-sm font-medium py-1">
           {button1}
         </button>
-        <button className="border border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
+        <button className="border border-orange-700 px-4 bg-white rounded-2xl text-orange-700 text-sm font-medium py-1">
           {button2}
         </button>
       </div>
