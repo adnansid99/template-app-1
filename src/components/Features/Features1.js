@@ -2,26 +2,26 @@ export default function Features1(props) {
   const {
     isReverse = false,
     label = "This is a label",
-    title = "Bikes Title",
-    description = "Desctiption about the bikes.",
+    title = "Bikes Titledfd",
+    description = "Desctsfgdes.",
     imageSrc = "https://source.unsplash.com/random/600x400/?sports bikes",
   } = props;
 
   return (
     <section
-      className={`px-8 mx-auto container py-20 flex flex-col gap-10 items-center ${
-        isReverse ? "md:flex-row-reverse" : "md:flex-row"
+      className={`container mx-auto flex flex-col items-center gap-10 px-8 py-20 ${
+        isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
       <img
         src={imageSrc}
         alt="features"
-        className="rounded-lg md:w-1/2 object-cover aspect-video object-center"
+        className="aspect-video rounded-lg object-cover object-center lg:w-1/2"
         loading="lazy"
       />
-      <div className="flex lg:p-14 md:w-1/2 flex-col gap-4 md:gap-8">
-        <p className="text-sm -mb-4 text-gray-700 lg:text-base">{label}</p>
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold">{title}</h2>
+      <div className="flex flex-col gap-4 lg:w-1/2 lg:gap-8 lg:p-14">
+        <p className="-mb-4 text-sm text-gray-700 lg:text-base">{label}</p>
+        <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
         <p className="text-sm lg:text-base">{description}</p>
       </div>
     </section>
