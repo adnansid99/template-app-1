@@ -15,10 +15,10 @@ export default function HeroSection1(props) {
         className="max-h-[50dvh] w-full object-cover object-center"
         loading="lazy"
       />
-      <div className="container mx-auto flex w-full flex-col items-center justify-between gap-14 px-8 py-20 text-center lg:flex-row lg:text-left">
+      <div className="container mx-auto flex w-full flex-col items-center justify-between gap-14 px-8 py-20 text-center lg:flex-row lg:text-center">
         <h1 className="text-3xl font-bold md:text-5xl lg:w-1/2">{title}</h1>
-        <div className="flex flex-col items-center justify-center gap-6 lg:w-1/2 lg:items-start">
-          <h6 className="text-base lg:text-xl">{subTitle}</h6>
+        <div className="flex flex-col justify-center gap-6 lg:w-1/2 items-center">
+          <h6 className="text-base xl:text-lg">{subTitle}</h6>
           <div className="flex items-center justify-end gap-4">
             <button className="text-nowrap rounded-2xl border border-orange-700 bg-orange-700 px-4 py-1 text-sm font-medium text-white">
               {button1}

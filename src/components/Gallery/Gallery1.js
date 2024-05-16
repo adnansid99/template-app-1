@@ -15,7 +15,7 @@ export default function Gallery1(props) {
         <h2 className="text-4xl font-semibold mb-4">{title}</h2>
         <p className="text-base">{subTitle}</p>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] items-center gap-10 w-full">
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(150px,1fr))] items-center gap-10 w-full">
         {galleryImages.map((image, index) => (
           <img
             key={index}

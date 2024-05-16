@@ -92,5 +92,5 @@ function Variant2() {
 }
 
 export default function App() {
-  return <Variant2 />;
+  return <Variant1 />;
 }
