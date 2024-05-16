@@ -1,4 +1,4 @@
-export default function Logos1(props) {
+export default function Logos2(props) {
   const {
     title = "Trusted by the worlds best companies social proof to build credibility",
     logos = [
@@ -16,10 +16,10 @@ export default function Logos1(props) {
       <h2 className="text-3xl md:text-4xl max-w-3xl font-bold text-center">
         {title}
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,_minmax(200px,1fr))] place-items-center xl:px-0 px-8 items-center w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,_minmax(140px,1fr))] place-items-center xl:px-0 px-8 items-center w-full">
         {logos.map((logo, index) => (
           <div
-            className="rotate-45 aspect-square max-w-48 overflow-hidden rounded-xl border-2"
+            className="rotate-45 aspect-square max-w-40 overflow-hidden rounded-xl border-2"
             key={index}
           >
             <img

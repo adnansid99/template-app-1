@@ -1,9 +1,9 @@
 export default function Features1(props) {
   const {
     isReverse = false,
-    label = "This is a label",
-    title = "Bikes Titledfd",
-    description = "Desctsfgdes.",
+    label = "Ride in Style and Power",
+    title = "Mountain Bikes",
+    description = "Explore the great outdoors with our range of durable and high-performance mountain bikes. Designed to tackle rough terrains and steep inclines, these bikes are perfect for adventure seekers.",
     imageSrc = "https://source.unsplash.com/random/600x400/?sports bikes",
   } = props;
 

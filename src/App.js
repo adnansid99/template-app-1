@@ -7,6 +7,7 @@ import FAQ2 from "./components/FAQ/FAQ2";
 import Features1 from "./components/Features/Features1";
 import Features2 from "./components/Features/Features2";
 import Footer1 from "./components/Footer/Footer1";
+import Footer2 from "./components/Footer/Footer2";
 import Gallery1 from "./components/Gallery/Gallery1";
 import Gallery2 from "./components/Gallery/Gallery2";
 import HeroSection1 from "./components/HeroSection/HeroSection1";
@@ -85,7 +86,7 @@ function Variant2() {
       <CTA2 />
       <FAQ2 />
       <Contact2 />
-      <Footer1 />
+      <Footer2 />
     </>
   );
 }

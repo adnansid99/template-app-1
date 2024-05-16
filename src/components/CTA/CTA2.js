@@ -15,7 +15,7 @@ export default function CTA2(props) {
           <button className="border w-full border-teal-600 text-white rounded-xl bg-teal-600 px-10 text-sm font-medium py-3">
             {button1}
           </button>
-          <button className="border w-full border-teal-600 px-10 rounded-xl text-teal-600 text-sm font-medium py-3">
+          <button className="border w-full bg-transparent border-teal-600 px-10 rounded-xl text-teal-600 text-sm font-medium py-3">
             {button2}
           </button>
         </div>

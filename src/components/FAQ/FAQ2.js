@@ -31,22 +31,22 @@ export default function FAQ2(props) {
   } = props;
 
   return (
-    <section className="container mx-auto px-8 py-20 flex flex-col items-center">
-      <div className="grid gap-10 w-full grid-cols-1 lg:grid-cols-2">
-        <div className="flex text-center lg:text-left flex-col gap-6">
-          <h2 className="text-3xl md:text-4xl font-bold">{title}</h2>
-          <p className="text-sm md:text-base">{subTitle}</p>
-          <div className="hidden aspect-video rounded-3xl w-96 bg-teal-600 lg:grid place-items-center">
-            <p className="text-9xl font-bold font-sans text-white">??</p>
+    <section className="container mx-auto flex flex-col items-center px-8 py-20">
+      <div className="grid w-full grid-cols-1 gap-10 xl:grid-cols-2">
+        <div className="flex flex-col gap-6 text-center xl:text-left">
+          <h2 className="text-3xl font-bold lg:text-4xl">{title}</h2>
+          <p className="text-sm lg:text-base">{subTitle}</p>
+          <div className="hidden aspect-video w-full max-w-96 place-items-center rounded-3xl bg-teal-600 xl:grid">
+            <p className="font-sans text-7xl font-bold text-white">??</p>
           </div>
         </div>
-        <div className="flex bg-slate-100 p-14 rounded-3xl flex-col gap-8">
+        <div className="flex flex-col gap-8 rounded-3xl bg-slate-100 p-14">
           {faq.map((item, index) => (
             <div key={index}>
-              <h3 className="text-sm leading-relaxed md:text-base font-semibold ">
+              <h3 className="text-sm font-semibold leading-relaxed lg:text-base ">
                 {item.question}
               </h3>
-              <p className="text-xs md:text-sm leading-relaxed font-medium md:font-normal">
+              <p className="text-xs font-medium leading-relaxed lg:text-sm lg:font-normal">
                 {item.answer}
               </p>
             </div>

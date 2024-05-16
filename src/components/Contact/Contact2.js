@@ -31,8 +31,8 @@ export default function Contact2(props) {
     <section className="py-20 bg-teal-600">
       <div className="container mx-auto px-8 text-white">
         <div className="flex items-center justify-between">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl mb-12 md:text-5xl font-semibold">
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-3xl mb-12 lg:text-5xl font-semibold">
               {title}
             </h2>
 
@@ -52,7 +52,7 @@ export default function Contact2(props) {
               ))}
             </div>
           </div>
-          <div className="w-96 hidden bg-white aspect-square rounded-3xl md:grid place-items-center">
+          <div className="w-full max-w-96 hidden bg-white aspect-square rounded-3xl xl:grid place-items-center">
             {/* <i class="fa-solid fa-mobile-screen-button "></i> */}
             <i class="fa-solid fa-earth-africa text-[14rem] text-teal-600"></i>
           </div>
