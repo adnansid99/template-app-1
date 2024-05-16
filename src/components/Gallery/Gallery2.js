@@ -1,4 +1,4 @@
-export default function Gallery2(props) {
+export default function Gallery2({ props }) {
   const {
     title = "Explore Our Bike Gallery",
     subTitle = "Browse through our collection of high-quality bikes available for sale",

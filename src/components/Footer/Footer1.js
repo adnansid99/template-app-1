@@ -1,4 +1,4 @@
-export default function Footer1(props) {
+export default function Footer1({ props }) {
   const {
     title1 = "Explore our collection of premium bikes.",
     title2 = "Visit us at our showroom or contact us for more information",

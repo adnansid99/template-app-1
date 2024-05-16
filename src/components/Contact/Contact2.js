@@ -1,4 +1,4 @@
-export default function Contact2(props) {
+export default function Contact2({ props }) {
   const {
     opentime = "Our showroom is open from Monday to Saturday, 9:00 AM to 6:00 PM.",
     title = "Contact Us",

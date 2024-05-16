@@ -1,4 +1,4 @@
-export default function CTA1(props) {
+export default function CTA1({ props }) {
   const {
     title = "Find Your Perfect Ride",
     subTitle = "Explore our wide range of bikes and find the one that suits your style and needs.",

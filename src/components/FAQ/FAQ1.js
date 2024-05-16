@@ -1,6 +1,6 @@
-export default function FAQ1(props) {
+export default function FAQ1({ props }) {
   const {
-    title = "FAQ",
+    title = "Frequency Asked Questions",
     subTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     faq = [
       {

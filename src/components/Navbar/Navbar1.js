@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Navbar1(props) {
+export default function Navbar1({ props }) {
   const {
     navItems = [
       { name: "Home", link: "#" },

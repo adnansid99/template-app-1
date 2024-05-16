@@ -1,4 +1,4 @@
-export default function Features1(props) {
+export default function Features1({ props }) {
   const {
     isReverse = false,
     label = "Ride in Style and Power",

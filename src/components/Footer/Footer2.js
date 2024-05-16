@@ -1,9 +1,5 @@
-export default function Footer2(props) {
+export default function Footer2({ props }) {
   const {
-    title1 = "Explore our collection of premium bikes.",
-    title2 = "Visit us at our showroom or contact us for more information",
-    inputPlaceholder = "Enter your email",
-    buttonText = "Contact Us",
     legal = [
       { name: "Privacy Policy", link: "#" },
       { name: "Terms and Conditions", link: "#" },
@@ -30,7 +26,7 @@ export default function Footer2(props) {
 
   return (
     <footer className="">
-      <div className="container py-20 gap-10 container flex flex-col lg:flex-row items-center justify-between px-8 mx-auto">
+      <div className="container py-20 gap-10 flex flex-col lg:flex-row items-center justify-between px-8 mx-auto">
         <div className="opacity-80 p-2">
           <img
             src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/Jutsu%20Black.png"

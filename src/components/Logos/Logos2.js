@@ -1,4 +1,4 @@
-export default function Logos2(props) {
+export default function Logos2({ props }) {
   const {
     title = "Trusted by the worlds best companies social proof to build credibility",
     logos = [

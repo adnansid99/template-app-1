@@ -21,35 +21,44 @@ import Navbar2 from "./components/Navbar/Navbar2";
 function Variant1() {
   return (
     <>
-      <Navbar1 />
-      <HeroSection1 />
-      <Logos1 />
-      <Gallery1 />
+      <Navbar1 props={{ button: "Buy" }} />
+      <HeroSection1 props={{}} />
+      <Logos1 props={{}} />
+      <Gallery1 props={{}} />
       <Features1
-        isReverse={false}
-        label="Ride in Style and Comfort"
-        title="Premium Bikes"
-        description="Explore our collection of premium bites that offer both style and cockpit for an exceptional writing experience."
-        imageSrc="https://source.unsplash.com/random/500x300/?sports bikes"
+        props={{
+          isReverse: false,
+          label: "Ride in Style and Comfort",
+          title: "Premium Bikes",
+          description:
+            "Explore our collection of premium bites that offer both style and cockpit for an exceptional writing experience.",
+          imageSrc: "https://source.unsplash.com/random/600x500/?sports bikes",
+        }}
       />
       <Features1
-        isReverse={true}
-        label="Mountain Bikes"
-        title="Mountain Bikes"
-        description="Explore the great outdoors with our range of durable and high-performance mountain bikes. Designed to tackle rough terrains and steep inclines, these bikes are perfect for adventure seekers."
-        imageSrc="https://source.unsplash.com/random/500x301/?sports bikes"
+        props={{
+          isReverse: true,
+          label: "Ride in Style and Power",
+          title: "Mountain Bikes",
+          description:
+            "Explore the great outdoors with our range of durable and high-performance mountain bikes. Designed to tackle rough terrains and steep inclines, these bikes are perfect for adventure seekers.",
+          imageSrc: "https://source.unsplash.com/random/605x505/?sports bikes",
+        }}
       />
       <Features1
-        isReverse={false}
-        label="Ride in style with our sleek and modern designs"
-        title="Sleek Design"
-        description="Our bikes are designed to not only perform well but also turn heads with their sleek and stylish appearance"
-        imageSrc="https://source.unsplash.com/random/500x302/?sports bikes"
+        props={{
+          isReverse: false,
+          label: "Ride in style with our sleek and modern designs",
+          title: "Sleek Design",
+          description:
+            "Our bikes are designed to not only perform well but also turn heads with their sleek and stylish appearance",
+          imageSrc: "https://source.unsplash.com/random/610x510/?sports bikes",
+        }}
       />
-      <CTA1 />
-      <FAQ1 />
-      <Contact1 />
-      <Footer1 />
+      <CTA1 props={{}} />
+      <FAQ1 props={{}} />
+      <Contact1 props={{}} />
+      <Footer1 props={{}} />
     </>
   );
 }
@@ -58,35 +67,44 @@ function Variant1() {
 function Variant2() {
   return (
     <>
-      <Navbar2 />
-      <HeroSection2 />
-      <Logos2 />
-      <Gallery2 />
+      <Navbar2 props={{}} />
+      <HeroSection2 props={{}} />
+      <Logos2 props={{}} />
+      <Gallery2 props={{}} />
       <Features2
-        isReverse={false}
-        label="Ride in Style and Comfort"
-        title="Premium Bikes"
-        description="Explore our collection of premium bites that offer both style and cockpit for an exceptional writing experience."
-        imageSrc="https://source.unsplash.com/random/600x500/?sports bikes"
+        props={{
+          isReverse: false,
+          label: "Ride in Style and Comfort",
+          title: "Premium Bikes",
+          description:
+            "Explore our collection of premium bites that offer both style and cockpit for an exceptional writing experience.",
+          imageSrc: "https://source.unsplash.com/random/600x500/?sports bikes",
+        }}
       />
       <Features2
-        isReverse={true}
-        label="Ride in Style and Power"
-        title="Mountain Bikes"
-        description="Explore the great outdoors with our range of durable and high-performance mountain bikes. Designed to tackle rough terrains and steep inclines, these bikes are perfect for adventure seekers."
-        imageSrc="https://source.unsplash.com/random/605x505/?sports bikes"
+        props={{
+          isReverse: true,
+          label: "Ride in Style and Power",
+          title: "Mountain Bikes",
+          description:
+            "Explore the great outdoors with our range of durable and high-performance mountain bikes. Designed to tackle rough terrains and steep inclines, these bikes are perfect for adventure seekers.",
+          imageSrc: "https://source.unsplash.com/random/605x505/?sports bikes",
+        }}
       />
       <Features2
-        isReverse={false}
-        label="Ride in style with our sleek and modern designs"
-        title="Sleek Design"
-        description="Our bikes are designed to not only perform well but also turn heads with their sleek and stylish appearance"
-        imageSrc="https://source.unsplash.com/random/610x510/?sports bikes"
+        props={{
+          isReverse: false,
+          label: "Ride in style with our sleek and modern designs",
+          title: "Sleek Design",
+          description:
+            "Our bikes are designed to not only perform well but also turn heads with their sleek and stylish appearance",
+          imageSrc: "https://source.unsplash.com/random/610x510/?sports bikes",
+        }}
       />
-      <CTA2 />
-      <FAQ2 />
-      <Contact2 />
-      <Footer2 />
+      <CTA2 props={{}} />
+      <FAQ2 props={{}} />
+      <Contact2 props={{}} />
+      <Footer2 props={{}} />
     </>
   );
 }

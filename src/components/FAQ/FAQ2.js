@@ -1,4 +1,4 @@
-export default function FAQ2(props) {
+export default function FAQ2({ props }) {
   const {
     title = "Frequency Asked Questions",
     subTitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse.",

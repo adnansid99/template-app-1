@@ -1,4 +1,4 @@
-export default function HeroSection2(props) {
+export default function HeroSection2({ props }) {
   const {
     backgroundImg = "https://source.unsplash.com/random/1920x900/?bike road",
     title = "Welcome to our Bike Showroom",
