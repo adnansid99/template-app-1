@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Navbar2({ props, setDarkMode, darkMode }) {
+export default function Navbar2({ props }) {
   const {
     navItems = [
       { name: "Home", link: "#" },
@@ -45,14 +45,10 @@ export default function Navbar2({ props, setDarkMode, darkMode }) {
           class="fa-solid fa-bars-staggered block text-black dark:text-gray-200 text-xl lg:hidden"
           onClick={() => setShowNav(true)}
         />
-        <div className="flex items-center gap-6">
-          <button onClick={() => setDarkMode((e) => !e)}>
-            <i class="fa-solid fa-moon text-black dark:text-gray-200 text-xl"></i>
-          </button>
-          <button className="hidden text-nowrap rounded-2xl bg-teal-600  px-4 py-1 text-sm font-medium text-white lg:block">
-            {button}
-          </button>
-        </div>
+
+        <button className="hidden text-nowrap rounded-2xl bg-teal-600  px-4 py-1 text-sm font-medium text-white lg:block">
+          {button}
+        </button>
 
         <div
           className={`absolute right-0 top-0 w-full border-b dark:border-gray-700 bg-white dark:bg-slate-900 p-7 px-8 transition-all duration-200 ${

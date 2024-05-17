@@ -1,4 +1,3 @@
-import { useState } from "react";
 import CTA1 from "./components/CTA/CTA1";
 import CTA2 from "./components/CTA/CTA2";
 import Contact1 from "./components/Contact/Contact1";
@@ -77,10 +76,9 @@ function Variant1() {
 
 // eslint-disable-next-line no-unused-vars
 function Variant2() {
-  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <Navbar2 props={{}} setDarkMode={setDarkMode} darkMode={darkMode} />
+    <>
+      <Navbar2 props={{}} />
       <HeroSection2 props={{}} />
       <Logos2
         props={{
@@ -129,7 +127,7 @@ function Variant2() {
       <FAQ2 props={{}} />
       <Contact2 props={{}} />
       <Footer2 props={{}} />
-    </div>
+    </>
   );
 }
 
