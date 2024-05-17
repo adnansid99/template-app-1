@@ -17,14 +17,16 @@ export default function Logos2({ props }) {
         <h2 className="text-3xl md:text-4xl max-w-3xl dark:text-white text-black font-bold text-center">
           {title}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,_minmax(140px,1fr))] place-items-center xl:px-0 px-8 items-center w-full">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-[repeat(auto-fit,_minmax(140px,1fr))] place-items-center xl:px-0 px-8 items-center w-full">
           {logos.map((logo, index) => (
-            <img
-              key={index}
-              src={logo}
-              alt="logos"
-              className="aspect-square object-cover object-center"
-            />
+            <div className="bg-slate-800 p-4 rounded-lg aspect-square">
+              <img
+                key={index}
+                src={logo}
+                alt="logos"
+                className="aspect-square rounded-lg object-cover object-center"
+              />
+            </div>
           ))}
         </div>
       </div>
