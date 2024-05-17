@@ -19,7 +19,7 @@ export default function Logos2({ props }) {
         </h2>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-[repeat(auto-fit,_minmax(140px,1fr))] place-items-center xl:px-0 px-8 items-center w-full">
           {logos.map((logo, index) => (
-            <div className="bg-slate-800 p-4 rounded-lg aspect-square">
+            <div className="bg-slate-300 dark:bg-slate-800 p-4 rounded-lg aspect-square">
               <img
                 key={index}
                 src={logo}
