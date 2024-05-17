@@ -19,17 +19,12 @@ export default function Logos2({ props }) {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,_minmax(140px,1fr))] place-items-center xl:px-0 px-8 items-center w-full">
           {logos.map((logo, index) => (
-            <div
-              className="rotate-45 aspect-square max-w-40 overflow-hidden rounded-xl border-2"
+            <img
               key={index}
-            >
-              <img
-                key={index}
-                src={logo}
-                alt="logos"
-                className="aspect-square -rotate-45 object-cover object-center scale-[140%]"
-              />
-            </div>
+              src={logo}
+              alt="logos"
+              className="aspect-square object-cover object-center"
+            />
           ))}
         </div>
       </div>
