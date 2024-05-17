@@ -27,7 +27,7 @@ export default function Footer1({ props }) {
   return (
     <footer className="bg-white dark:bg-slate-950">
       <div className="container py-20 gap-10 flex flex-col items-center justify-center px-8 mx-auto">
-        <div className="grid sm:text-left text-gray-700 dark:text-gray-300 text-center grid-cols-[repeat(auto-fit,_minmax(270px,1fr))] place-items-center w-full text-sm gap-8">
+        <div className="grid sm:text-left text-gray-700 dark:text-gray-300 text-center grid-cols-[repeat(auto-fit,_minmax(150px,1fr))] place-items-center w-full text-sm gap-8">
           <div className="flex flex-col gap-4">
             {legal.map((item, index) => (
               <a
@@ -39,7 +39,7 @@ export default function Footer1({ props }) {
               </a>
             ))}
           </div>
-          <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" />
+          {/* <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" /> */}
           <div className="flex flex-col gap-4">
             {getHelp.map((item, index) => (
               <a
@@ -51,7 +51,7 @@ export default function Footer1({ props }) {
               </a>
             ))}
           </div>
-          <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" />
+          {/* <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" /> */}
           <div className="flex flex-col gap-4">
             {aboutUs.map((item, index) => (
               <a
@@ -73,7 +73,7 @@ export default function Footer1({ props }) {
           <img
             src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/Jutsu%20White.png"
             alt=""
-            className="max-w-44 hidden dark:inline-block"
+            className="max-w-40 hidden dark:inline-block"
           />
           <div className="flex text-black dark:text-white items-center gap-4 mt-2">
             <i class="fa-brands fa-linkedin text-xl"></i>

@@ -15,7 +15,7 @@ export default function Navbar2({ props }) {
   const [showNav, setShowNav] = useState(false);
   return (
     <nav className="relative bg-white dark:bg-slate-950">
-      <div className="container mx-auto flex items-center justify-between px-8 py-4">
+      <div className="container mx-auto flex items-center justify-between px-8 py-6">
         <img
           src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/Black%20Jutsu.png"
           alt="Jutsu"
