@@ -31,7 +31,7 @@ export default function HeroSection1({ props }) {
           <img
             src={backgroundImg}
             alt="hero"
-            className="w-full relative h-full z-10 rounded-lg object-cover object-center"
+            className="w-full min-w-28 aspect-square relative h-full z-10 rounded-lg object-cover object-center"
             loading="lazy"
           />
           <div className="absolute rounded-lg -right-4 -top-4 z-0 w-40 h-40 bg-purple-700" />
