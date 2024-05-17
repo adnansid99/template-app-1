@@ -28,8 +28,8 @@ export default function Contact2({ props }) {
   } = props;
 
   return (
-    <section className="py-20 bg-teal-600">
-      <div className="container mx-auto px-8 text-white">
+    <section className="bg-teal-600">
+      <div className="container mx-auto py-20 px-8 text-white">
         <div className="flex items-start justify-between gap-10">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl mb-12 md:text-5xl font-semibold">

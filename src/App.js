@@ -66,7 +66,7 @@ function Variant1() {
 // eslint-disable-next-line no-unused-vars
 function Variant2() {
   return (
-    <>
+    <div className="dark">
       <Navbar2 props={{}} />
       <HeroSection2 props={{}} />
       <Logos2 props={{}} />
@@ -77,7 +77,7 @@ function Variant2() {
           label: "Ride in Style and Comfort",
           title: "Premium Bikes",
           description:
-            "Explore our collection of premium bites that offer both style and cockpit for an exceptional writing experience.",
+            "Explore our collection of premium bites that offer both style and cockpit for an exceptional writing experiencecollection of premium bites that offer both style and cockpit for an exceptional writing experiencecollection of premium bites that offer both style and cockpit for an exceptional writing experience.",
           imageSrc: "https://source.unsplash.com/random/600x500/?sports bikes",
         }}
       />
@@ -105,7 +105,7 @@ function Variant2() {
       <FAQ2 props={{}} />
       <Contact2 props={{}} />
       <Footer2 props={{}} />
-    </>
+    </div>
   );
 }
 
