@@ -49,7 +49,7 @@ export default function Contact1({ props }) {
               <h3 className="text-xl text-black dark:text-white font-medium">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300">
+              <p className=" text-sm text-gray-700 dark:text-gray-300">
                 {item.description}
               </p>
               <p className="text-sm text-gray-700 dark:text-gray-300">
