@@ -11,7 +11,7 @@ export default function HeroSection1({ props }) {
     <section className="bg-white dark:bg-gray-950">
       <div className="container mx-auto flex py-20 px-8 gap-16 justify-center lg:justify-between items-center flex-row">
         <div className="flex flex-col gap-8 max-w-3xl justify-center text-center lg:text-left lg:items-start items-center">
-          <h1 className="text-3xl text-black dark:text-white font-bold lg:text-6xl">
+          <h1 className="text-3xl text-black dark:text-white font-bold lg:text-5xl xl:text-6xl">
             {title}
           </h1>
           <p className="text-base text-gray-600 dark:text-gray-300 lg:text-lg">
@@ -26,15 +26,15 @@ export default function HeroSection1({ props }) {
             </button>
           </div>
         </div>
-        <div className="relative hidden lg:block max-w-sm xl:max-w-md rounded-lg  aspect-square">
-          <div className="absolute rounded-lg -left-6 -bottom-6 z-0 w-40 h-40 bg-purple-700" />
+        <div className="relative hidden lg:block max-w-sm xl:max-w-md rounded-lg  aspect-square mr-4">
+          <div className="absolute rounded-lg -left-4 -bottom-4 z-0 w-40 h-40 bg-purple-700" />
           <img
             src={backgroundImg}
             alt="hero"
             className="w-full relative h-full z-10 rounded-lg object-cover object-center"
             loading="lazy"
           />
-          <div className="absolute rounded-lg -right-6 -top-6 z-0 w-40 h-40 bg-purple-700" />
+          <div className="absolute rounded-lg -right-4 -top-4 z-0 w-40 h-40 bg-purple-700" />
         </div>
       </div>
     </section>

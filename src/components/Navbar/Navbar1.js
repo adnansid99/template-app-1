@@ -14,7 +14,7 @@ export default function Navbar1({ props }) {
 
   const [showNav, setShowNav] = useState(false);
   return (
-    <nav className="relative bg-white dark:bg-gray-950">
+    <nav className="relative bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-900">
       <div className="container mx-auto flex items-center justify-between px-8 py-6">
         <div className="flex items-center gap-6 text-sm font-medium">
           <img
