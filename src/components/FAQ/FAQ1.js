@@ -28,33 +28,29 @@ export default function FAQ1({ props }) {
         answer: "We accept all major credit cards, PayPal, and bank transfers.",
       },
     ],
-    title2 = "Still have a question?",
-    subTitle2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    button = "Contact",
   } = props;
 
   return (
-    <section className="container px-8 mx-auto flex flex-col gap-8 items-center justify-center py-20">
-      <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
-      <p className="text-sm md:text-base text-center">{subTitle}</p>
-      <div className="flex flex-col justify-center items-start gap-6 my-8">
-        {faq.map((item, index) => (
-          <div key={index}>
-            <h3 className="text-sm leading-relaxed md:text-base font-semibold ">
-              {item.question}
-            </h3>
-            <p className="text-xs md:text-sm leading-relaxed font-medium md:font-normal">
-              {item.answer}
-            </p>
-          </div>
-        ))}
-      </div>
-      <div className="flex flex-col items-center justify-center text-center gap-4">
-        <h2 className="text-2xl md:text-4xl font-semibold">{title2}</h2>
-        <p className="text-sm md:text-base">{subTitle2}</p>
-        <button className="border bg-white border-orange-700 px-4 rounded-2xl text-orange-700 text-sm font-medium py-1">
-          {button}
-        </button>
+    <section className="bg-white dark:bg-gray-950">
+      <div className="container px-8 mx-auto flex flex-col gap-8 items-center justify-center py-20">
+        <h2 className="text-3xl text-black dark:text-white md:text-4xl font-semibold">
+          {title}
+        </h2>
+        <p className="text-sm text-gray-700 dark:text-gray-300 md:text-base text-center">
+          {subTitle}
+        </p>
+        <div className="flex flex-col justify-center items-start gap-6 my-8">
+          {faq.map((item, index) => (
+            <div key={index}>
+              <h3 className="text-sm text-black dark:text-white leading-relaxed md:text-base font-semibold ">
+                {item.question}
+              </h3>
+              <p className="text-xs md:text-sm text-black dark:text-gray-300 leading-relaxed font-medium md:font-normal">
+                {item.answer}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

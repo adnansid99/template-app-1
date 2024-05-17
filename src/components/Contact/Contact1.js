@@ -28,24 +28,36 @@ export default function Contact1({ props }) {
   } = props;
 
   return (
-    <section className="container px-8 mx-auto py-20">
-      <div className="flex flex-col justify-center items-start gap-4 mb-8">
-        <p className="text-sm">{opentime}</p>
-        <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
-        <p className="text-sm">{reachUs}</p>
-      </div>
-      <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,1fr))]  items-center gap-12 md:gap-16">
-        {moreInfo.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-start justify-center gap-4"
-          >
-            <i className={`fa-solid text-3xl ${item.icon}`} />
-            <h3 className="text-xl font-medium">{item.title}</h3>
-            <p className="text-sm">{item.description}</p>
-            <p className="text-sm">{item.contact}</p>
-          </div>
-        ))}
+    <section className="bg-white dark:bg-gray-950">
+      <div className="container px-8 mx-auto py-20">
+        <div className="flex flex-col justify-center items-start gap-4 mb-8">
+          <p className="text-sm text-gray-700 dark:text-gray-300">{opentime}</p>
+          <h2 className="text-3xl text-black dark:text-white md:text-4xl font-semibold">
+            {title}
+          </h2>
+          <p className="text-sm text-gray-700 dark:text-gray-300">{reachUs}</p>
+        </div>
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,1fr))]  items-center gap-12 md:gap-16">
+          {moreInfo.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-start justify-center gap-4"
+            >
+              <i
+                className={`fa-solid text-black dark:text-white text-3xl ${item.icon}`}
+              />
+              <h3 className="text-xl text-black dark:text-white font-medium">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                {item.description}
+              </p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                {item.contact}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

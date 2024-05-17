@@ -1,6 +1,6 @@
 export default function HeroSection1({ props }) {
   const {
-    backgroundImg = "https://source.unsplash.com/random/1920x900/?bike road",
+    backgroundImg = "https://source.unsplash.com/random/500x500/?bike road",
     title = "Welcome to our Bike Showroom",
     subTitle = "Explore our widerange of bikes for every type of rider",
     button1 = "Contact Us",
@@ -8,25 +8,33 @@ export default function HeroSection1({ props }) {
   } = props;
 
   return (
-    <section>
-      <img
-        src={backgroundImg}
-        alt="hero"
-        className="max-h-[50dvh] h-full w-full object-cover object-center"
-        loading="lazy"
-      />
-      <div className="container mx-auto flex w-full flex-col items-center justify-between gap-14 px-8 py-20 text-center lg:flex-row lg:text-center">
-        <h1 className="text-3xl font-bold md:text-5xl lg:w-1/2">{title}</h1>
-        <div className="flex flex-col justify-center gap-6 lg:w-1/2 items-center">
-          <h6 className="text-base lg:text-lg">{subTitle}</h6>
-          <div className="flex items-center justify-end gap-4">
-            <button className="text-nowrap rounded-2xl border border-orange-700 bg-orange-700 px-4 py-1 text-sm font-medium text-white">
+    <section className="bg-white dark:bg-gray-950">
+      <div className="container mx-auto flex py-20 px-8 gap-12 justify-center lg:justify-between items-center flex-row">
+        <div className="flex flex-col gap-8 max-w-3xl justify-center text-center lg:text-left lg:items-start items-center">
+          <h1 className="text-3xl text-black dark:text-white font-bold lg:text-6xl">
+            {title}
+          </h1>
+          <p className="text-base text-gray-600 dark:text-gray-300 lg:text-lg">
+            {subTitle}
+          </p>
+          <div className="flex items-center gap-4">
+            <button className="text-nowrap rounded-2xl border-orange-700 bg-orange-700 px-6 py-2 text-sm font-medium text-white">
               {button1}
             </button>
-            <button className="text-nowrap rounded-2xl border border-orange-700 bg-white px-4 py-1 text-sm font-medium text-orange-700">
+            <button className="text-nowrap rounded-2xl border border-orange-700 bg-transparent px-6 py-2 text-sm font-medium text-orange-700">
               {button2}
             </button>
           </div>
+        </div>
+        <div className="relative hidden lg:block max-w-md rounded-lg  aspect-square">
+          <div className="absolute rounded-lg -left-6 -bottom-6 z-0 w-40 h-40 bg-orange-700" />
+          <img
+            src={backgroundImg}
+            alt="hero"
+            className="w-full relative h-full z-10 rounded-lg object-cover object-center"
+            loading="lazy"
+          />
+          <div className="absolute rounded-lg -right-6 -top-6 z-0 w-40 h-40 bg-orange-700" />
         </div>
       </div>
     </section>

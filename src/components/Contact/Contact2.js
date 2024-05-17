@@ -42,7 +42,7 @@ export default function Contact2({ props }) {
                   key={index}
                   className="flex flex-col items-start justify-center gap-4"
                 >
-                  <div className="flex items-center text-xl gap-2 ">
+                  <div className="flex items-center text-xl gap-2">
                     <i className={`fa-solid ${item.icon}`} />
                     <h3 className="font-bold">{item.title}</h3>
                   </div>

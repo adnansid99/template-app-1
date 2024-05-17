@@ -41,7 +41,7 @@ export default function FAQ2({ props }) {
             {subTitle}
           </p>
           <div className="hidden aspect-video w-full max-w-96 place-items-center rounded-3xl bg-teal-600 xl:grid">
-            <p className="font-sans text-7xl font-bold text-white">??</p>
+            <i class="fa-solid fa-comments text-8xl text-white" />
           </div>
         </div>
         <div className="flex flex-col gap-8 rounded-3xl bg-slate-100 dark:bg-slate-900 p-14">

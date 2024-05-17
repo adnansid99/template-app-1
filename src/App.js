@@ -66,7 +66,7 @@ function Variant1() {
 // eslint-disable-next-line no-unused-vars
 function Variant2() {
   return (
-    <div className="dark">
+    <>
       <Navbar2 props={{}} />
       <HeroSection2 props={{}} />
       <Logos2 props={{}} />
@@ -105,10 +105,10 @@ function Variant2() {
       <FAQ2 props={{}} />
       <Contact2 props={{}} />
       <Footer2 props={{}} />
-    </div>
+    </>
   );
 }
 
 export default function App() {
-  return <Variant2 />;
+  return <Variant1 />;
 }

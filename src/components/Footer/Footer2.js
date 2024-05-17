@@ -50,7 +50,11 @@ export default function Footer2({ props }) {
         <div className="grid sm:text-left text-gray-700 dark:text-gray-300 text-center grid-cols-[repeat(auto-fit,_minmax(270px,1fr))] max-w-4xl w-full text-sm gap-8">
           <div className="flex flex-col gap-4">
             {legal.map((item, index) => (
-              <a key={index} href={item.link}>
+              <a
+                key={index}
+                href={item.link}
+                className="text-gray-700 dark:text-gray-400"
+              >
                 {item.name}
               </a>
             ))}
@@ -58,7 +62,11 @@ export default function Footer2({ props }) {
           <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" />
           <div className="flex flex-col gap-4">
             {getHelp.map((item, index) => (
-              <a key={index} href={item.link}>
+              <a
+                key={index}
+                href={item.link}
+                className="text-gray-700 dark:text-gray-400"
+              >
                 {item.name}
               </a>
             ))}
@@ -66,7 +74,11 @@ export default function Footer2({ props }) {
           <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" />
           <div className="flex flex-col gap-4">
             {aboutUs.map((item, index) => (
-              <a key={index} href={item.link}>
+              <a
+                key={index}
+                href={item.link}
+                className="text-gray-700 dark:text-gray-400"
+              >
                 {item.name}
               </a>
             ))}

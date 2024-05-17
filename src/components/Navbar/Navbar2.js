@@ -17,9 +17,14 @@ export default function Navbar2({ props }) {
     <nav className="relative bg-white dark:bg-slate-950">
       <div className="container mx-auto flex items-center justify-between px-8 py-4">
         <img
-          src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/jutsu-avatar.png"
+          src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/Black%20Jutsu.png"
           alt="Jutsu"
-          className="h-12"
+          className="h-8 inline-block dark:hidden"
+        />
+        <img
+          src="https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/White%20Jutsu.png"
+          alt="Jutsu"
+          className="h-8 hidden dark:inline-block"
         />
 
         <ul className="hidden text-sm font-medium items-center gap-6 lg:flex">
@@ -28,7 +33,7 @@ export default function Navbar2({ props }) {
               <a
                 key={index}
                 href={item.link}
-                className="text-nowrap text-gray-700 dark:text-gray-200 hover:text-orange-700"
+                className="text-nowrap text-gray-700 dark:text-gray-200 hover:text-teal-600"
               >
                 {item.name}
               </a>
@@ -66,6 +71,9 @@ export default function Navbar2({ props }) {
                 </a>
               </li>
             ))}
+            <button className="text-nowrap rounded-2xl bg-teal-600 px-4 py-1 text-sm font-medium text-white block">
+              {button}
+            </button>
           </ul>
         </div>
       </div>
