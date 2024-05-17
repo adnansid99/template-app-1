@@ -52,7 +52,7 @@ export default function Navbar1({ props }) {
         </button>
 
         <div
-          className={`absolute right-0 top-0 w-full border-b bg-white dark:bg-gray-900 p-7 px-8 transition-all duration-200 ${
+          className={`absolute right-0 top-0 w-full border-b dark:border-gray-700 bg-white dark:bg-gray-900 p-7 px-8 transition-all duration-200 ${
             showNav ? "inline-block" : "hidden"
           }`}
         >
