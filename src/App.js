@@ -23,7 +23,18 @@ function Variant1() {
     <>
       <Navbar1 props={{ button: "Buy" }} />
       <HeroSection1 props={{}} />
-      <Logos1 props={{}} />
+      <Logos1
+        props={{
+          logos: [
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/107.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/40626.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/4332857.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/5.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/ODUJEH0.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/bird_2.webp",
+          ],
+        }}
+      />
       <Gallery1 props={{}} />
       <Features1
         props={{
@@ -69,7 +80,18 @@ function Variant2() {
     <>
       <Navbar2 props={{}} />
       <HeroSection2 props={{}} />
-      <Logos2 props={{}} />
+      <Logos2
+        props={{
+          logos: [
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/107.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/40626.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/4332857.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/5.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/ODUJEH0.webp",
+            "https://cdn.jsdelivr.net/gh/adnansid99/theDeployer@master/Jutsu/companyLogos/bird_2.webp",
+          ],
+        }}
+      />
       <Gallery2 props={{}} />
       <Features2
         props={{
@@ -110,5 +132,5 @@ function Variant2() {
 }
 
 export default function App() {
-  return <Variant2 />;
+  return <Variant1 />;
 }

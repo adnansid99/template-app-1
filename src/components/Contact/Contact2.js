@@ -1,8 +1,6 @@
 export default function Contact2({ props }) {
   const {
-    opentime = "Our showroom is open from Monday to Saturday, 9:00 AM to 6:00 PM.",
     title = "Contact Us",
-    reachUs = "Feel free to reach out to us for any inquiries or assistance.",
     moreInfo = [
       {
         icon: "fa-envelope",
