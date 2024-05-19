@@ -1,4 +1,9 @@
-export default function Footer1({ props }) {
+import { useNode } from "@craftjs/core";
+import PaddingTool from "../../craft-tools/PaddingTool";
+import MarginTool from "../../craft-tools/MarginTool";
+import TextInputTool from "../../craft-tools/TextInputTool";
+
+export default function Footer1({ props, style }) {
   const {
     legal = [
       { name: "Privacy Policy", link: "#" },
@@ -24,8 +29,20 @@ export default function Footer1({ props }) {
     copyRight = "2023 Bike Showroom. All Rights Reserved.",
   } = props;
 
+  const {
+    connectors: { connect, drag },
+  } = useNode();
+
   return (
-    <footer className="bg-white dark:bg-slate-950">
+    <footer
+      {...props}
+      ref={(ref) => connect(drag(ref))}
+      style={{
+        padding: `${style?.paddingTop}px ${style?.paddingRight}px ${style?.paddingBottom}px ${style?.paddingLeft}px`,
+        margin: `${style?.marginTop}px ${style?.marginRight}px ${style?.marginBottom}px ${style?.marginLeft}px`,
+      }}
+      className="bg-white dark:bg-slate-950"
+    >
       <div className="container py-20 gap-10 flex flex-col items-center justify-center px-8 mx-auto">
         <div className="grid sm:text-left text-gray-700 dark:text-gray-300 text-center grid-cols-[repeat(auto-fit,_minmax(150px,1fr))] place-items-center w-full text-sm gap-8">
           <div className="flex flex-col gap-4">
@@ -39,7 +56,6 @@ export default function Footer1({ props }) {
               </a>
             ))}
           </div>
-          {/* <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" /> */}
           <div className="flex flex-col gap-4">
             {getHelp.map((item, index) => (
               <a
@@ -51,7 +67,6 @@ export default function Footer1({ props }) {
               </a>
             ))}
           </div>
-          {/* <div className="h-px w-full bg-gray-300 dark:bg-gray-800 sm:hidden block" /> */}
           <div className="flex flex-col gap-4">
             {aboutUs.map((item, index) => (
               <a
@@ -76,11 +91,11 @@ export default function Footer1({ props }) {
             className="max-w-40 hidden dark:inline-block"
           />
           <div className="flex text-black dark:text-white items-center gap-4 mt-2">
-            <i class="fa-brands fa-linkedin text-xl"></i>
-            <i class="fa-brands fa-square-facebook text-xl"></i>
-            <i class="fa-brands fa-github text-xl"></i>
-            <i class="fa-brands fa-x-twitter text-xl"></i>
-            <i class="fa-brands fa-youtube text-xl"></i>
+            <i className="fa-brands fa-linkedin text-xl"></i>
+            <i className="fa-brands fa-square-facebook text-xl"></i>
+            <i className="fa-brands fa-github text-xl"></i>
+            <i className="fa-brands fa-x-twitter text-xl"></i>
+            <i className="fa-brands fa-youtube text-xl"></i>
           </div>
         </div>
       </div>
@@ -92,3 +107,135 @@ export default function Footer1({ props }) {
     </footer>
   );
 }
+
+export const FooterSettings = () => {
+  return (
+    <div className="flex w-full flex-col gap-2 px-2">
+      <PaddingTool />
+      <MarginTool />
+    </div>
+  );
+};
+
+export const FooterData = () => {
+  const {
+    legal,
+    getHelp,
+    aboutUs,
+    copyRight,
+    actions: { setProp },
+  } = useNode((node) => ({
+    legal: node.data.props.props.legal,
+    getHelp: node.data.props.props.getHelp,
+    aboutUs: node.data.props.props.aboutUs,
+    copyRight: node.data.props.props.copyRight,
+  }));
+
+  return (
+    <div className="flex w-full flex-col gap-2 px-2">
+      {legal.map((item, index) => (
+        <div key={index}>
+          <TextInputTool
+            label={`Legal Item ${index + 1} Name`}
+            value={item.name}
+            onChange={(e) => {
+              setProp((props) => {
+                props.props.legal[index].name = e.target.value;
+              });
+            }}
+            placeholder="Enter legal item name here..."
+          />
+          <TextInputTool
+            label={`Legal Item ${index + 1} Link`}
+            value={item.link}
+            onChange={(e) => {
+              setProp((props) => {
+                props.props.legal[index].link = e.target.value;
+              });
+            }}
+            placeholder="Enter legal item link here..."
+          />
+        </div>
+      ))}
+      {getHelp.map((item, index) => (
+        <div key={index}>
+          <TextInputTool
+            label={`Get Help Item ${index + 1} Name`}
+            value={item.name}
+            onChange={(e) => {
+              setProp((props) => {
+                props.props.getHelp[index].name = e.target.value;
+              });
+            }}
+            placeholder="Enter get help item name here..."
+          />
+          <TextInputTool
+            label={`Get Help Item ${index + 1} Link`}
+            value={item.link}
+            onChange={(e) => {
+              setProp((props) => {
+                props.props.getHelp[index].link = e.target.value;
+              });
+            }}
+            placeholder="Enter get help item link here..."
+          />
+        </div>
+      ))}
+      {aboutUs.map((item, index) => (
+        <div key={index}>
+          <TextInputTool
+            label={`About Us Item ${index + 1} Name`}
+            value={item.name}
+            onChange={(e) => {
+              setProp((props) => {
+                props.props.aboutUs[index].name = e.target.value;
+              });
+            }}
+            placeholder="Enter about us item name here..."
+          />
+          <TextInputTool
+            label={`About Us Item ${index + 1} Link`}
+            value={item.link}
+            onChange={(e) => {
+              setProp((props) => {
+                props.props.aboutUs[index].link = e.target.value;
+              });
+            }}
+            placeholder="Enter about us item link here..."
+          />
+        </div>
+      ))}
+      <TextInputTool
+        label="Copy Right Text"
+        value={copyRight}
+        onChange={(e) => {
+          setProp((props) => {
+            props.props.copyRight = e.target.value;
+          });
+        }}
+        placeholder="Enter copy right text here..."
+      />
+    </div>
+  );
+};
+
+export const FooterDefaultProps = {
+  style: {
+    paddingTop: 0,
+    paddingLeft: 0,
+    paddingBottom: 0,
+    paddingRight: 0,
+    marginTop: 0,
+    marginLeft: 0,
+    marginBottom: 0,
+    marginRight: 0,
+  },
+};
+
+Footer1.craft = {
+  props: FooterDefaultProps,
+  related: {
+    settings: FooterSettings,
+    data: FooterData,
+  },
+};

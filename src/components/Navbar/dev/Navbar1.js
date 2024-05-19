@@ -118,69 +118,29 @@ export const NavbarSettings = () => {
 
 export const NavbarData = () => {
   const {
-    navItem1,
-    navItem2,
-    navItem3,
-    navItem4,
-    navItem5,
+    navItems,
     buttonText,
     actions: { setProp },
   } = useNode((node) => ({
-    navItem1: node.data.props.props.navItems[0].name,
-    navItem2: node.data.props.props.navItems[1].name,
-    navItem3: node.data.props.props.navItems[2].name,
-    navItem4: node.data.props.props.navItems[3].name,
-    navItem5: node.data.props.props.navItems[4].name,
+    navItems: node.data.props.props.navItems,
     buttonText: node.data.props.props.buttonText,
   }));
 
   return (
     <div className="grid w-full grid-cols-2 gap-2 px-2 py-2">
-      <TextInputTool
-        label="Text 1"
-        value={navItem1}
-        onChange={(e) => {
-          setProp((props) => {
-            props.props.navItems[0].name = e.target.value;
-          });
-        }}
-        placeholder="Enter navitem text here..."
-      />
+      {navItems.map((item, index) => (
+        <TextInputTool
+          label="Text 1"
+          value={item.name}
+          onChange={(e) => {
+            setProp((props) => {
+              props.props.navItems[index].name = e.target.value;
+            });
+          }}
+          placeholder="Enter navitem text here..."
+        />
+      ))}
 
-      <TextInputTool
-        label="Text 2"
-        value={navItem2}
-        onChange={(e) => {
-          setProp((props) => (props.props.navItems[1].name = e.target.value));
-        }}
-        placeholder="Enter navitem text here..."
-      />
-
-      <TextInputTool
-        label="Text 3"
-        value={navItem3}
-        onChange={(e) => {
-          setProp((props) => (props.props.navItems[2].name = e.target.value));
-        }}
-        placeholder="Enter navitem text here..."
-      />
-
-      <TextInputTool
-        label="Text 4"
-        value={navItem4}
-        onChange={(e) => {
-          setProp((props) => (props.props.navItems[3].name = e.target.value));
-        }}
-        placeholder="Enter navitem text here..."
-      />
-      <TextInputTool
-        label="Text 4"
-        value={navItem5}
-        onChange={(e) => {
-          setProp((props) => (props.props.navItems[4].name = e.target.value));
-        }}
-        placeholder="Enter navitem text here..."
-      />
       <TextInputTool
         label="Button Text"
         value={buttonText}
