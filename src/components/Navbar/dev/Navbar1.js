@@ -1,30 +1,15 @@
 import { useState } from "react";
 import { useNode } from "@craftjs/core";
-// import BackgroundColorTool from "../../craft-tools/BackgroundColorTool";
-import FlexDirectionTool from "../../craft-tools/FlexDirectionTool";
-import PaddingTool from "../../craft-tools/PaddingTool";
-import MarginTool from "../../craft-tools/MarginTool";
-import TextInputTool from "../../craft-tools/TextInputTool";
-export default function Navbar1({ props, style }) {
-  const {
-    navItems = [
-      { name: "Home", link: "#" },
-      { name: "Bikes", link: "#" },
-      { name: "Accessories", link: "#" },
-      { name: "About Us", link: "#" },
-      { name: "Contact Us", link: "#" },
-    ],
-    buttonText = "BUY",
-  } = props;
 
+export default function Navbar1({ props, style }) {
   const [showNav, setShowNav] = useState(false);
 
   const {
     connectors: { connect, drag },
   } = useNode();
+
   return (
     <nav
-      {...props}
       ref={(ref) => connect(drag(ref))}
       style={{
         padding: `${style?.paddingTop || 0}px ${style?.paddingRight || 0}px ${
@@ -53,7 +38,7 @@ export default function Navbar1({ props, style }) {
           />
 
           <ul className="hidden items-center gap-6 lg:flex">
-            {navItems.map((item, index) => (
+            {props.navItems.map((item, index) => (
               <li>
                 <a
                   key={index}
@@ -72,7 +57,7 @@ export default function Navbar1({ props, style }) {
         />
 
         <button className="hidden text-nowrap rounded-2xl bg-purple-700  px-4 py-1 text-sm font-medium text-white lg:block">
-          {buttonText}
+          {props.buttonText}
         </button>
 
         <div
@@ -85,7 +70,7 @@ export default function Navbar1({ props, style }) {
             onClick={() => setShowNav(false)}
           />{" "}
           <ul className="flex flex-col items-center justify-center gap-6">
-            {navItems.map((item, index) => (
+            {props.navItems.map((item, index) => (
               <li>
                 <a
                   key={index}
@@ -97,7 +82,7 @@ export default function Navbar1({ props, style }) {
               </li>
             ))}
             <button className="text-nowrap rounded-2xl bg-purple-700  px-4 py-1 text-sm font-medium text-white ">
-              {buttonText}
+              {props.buttonText}
             </button>
           </ul>
         </div>
@@ -105,73 +90,3 @@ export default function Navbar1({ props, style }) {
     </nav>
   );
 }
-
-export const NavbarSettings = () => {
-  return (
-    <div className="flex w-full flex-col gap-2 px-2">
-      <FlexDirectionTool />
-      <PaddingTool />
-      <MarginTool />
-    </div>
-  );
-};
-
-export const NavbarData = () => {
-  const {
-    navItems,
-    buttonText,
-    actions: { setProp },
-  } = useNode((node) => ({
-    navItems: node.data.props.props.navItems,
-    buttonText: node.data.props.props.buttonText,
-  }));
-
-  return (
-    <div className="grid w-full grid-cols-2 gap-2 px-2 py-2">
-      {navItems.map((item, index) => (
-        <TextInputTool
-          label="Text 1"
-          value={item.name}
-          onChange={(e) => {
-            setProp((props) => {
-              props.props.navItems[index].name = e.target.value;
-            });
-          }}
-          placeholder="Enter navitem text here..."
-        />
-      ))}
-
-      <TextInputTool
-        label="Button Text"
-        value={buttonText}
-        onChange={(e) => {
-          setProp((props) => (props.props.buttonText = e.target.value));
-        }}
-        placeholder="Enter button text here..."
-      />
-    </div>
-  );
-};
-
-export const NavbarDefaultProps = {
-  style: {
-    flexDirection: "row",
-    paddingTop: 0,
-    paddingLeft: 0,
-    paddingBottom: 0,
-    paddingRight: 0,
-
-    marginTop: 0,
-    marginLeft: 0,
-    marginBottom: 0,
-    marginRight: 0,
-  },
-};
-
-Navbar1.craft = {
-  props: NavbarDefaultProps,
-  related: {
-    settings: NavbarSettings,
-    data: NavbarData,
-  },
-};
