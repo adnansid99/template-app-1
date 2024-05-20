@@ -1,13 +1,6 @@
-import { useNode } from "@craftjs/core";
-
 export default function Partners1({ props, style }) {
-  const {
-    connectors: { connect, drag },
-  } = useNode();
-
   return (
     <section
-      ref={(ref) => connect(drag(ref))}
       style={{
         padding: `${style?.paddingTop}px ${style?.paddingRight}px ${style?.paddingBottom}px ${style?.paddingLeft}px`,
         margin: `${style?.marginTop}px ${style?.marginRight}px ${style?.marginBottom}px ${style?.marginLeft}px`,
